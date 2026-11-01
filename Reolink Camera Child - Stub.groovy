@@ -10,7 +10,7 @@
  *   1. Open this device in Hubitat
  *   2. Click "Edit" on the device
  *   3. Change "Type" to the correct driver for your camera model:
- *        - Reolink Atlas 2K (battery)  → "Reolink Altas 2K Camera Child"
+ *        - Reolink Altas 2K (battery)  → "Reolink Altas 2K Camera Child"
  *        - Reolink CX-820 (PoE)        → "Reolink CX-820 Camera Child"
  *        - Reolink Argus MagiCam (AA)  → "Reolink Argus MagiCam Camera Child"
  *   4. Click Save Device

@@ -9,7 +9,7 @@ A parent driver logs into the Home Hub Pro and polls it; each camera channel bec
 | Driver (Type name in Hubitat) | Version | Use for | Import URL |
 |---|---|---|---|
 | Reolink Hub Parent | v25 | The Home Hub Pro itself: login, polling, creating child devices | [raw](https://raw.githubusercontent.com/mrfy8/reolink/main/Reolink%20Home%20Hub%20Pro%20-%20Parent.groovy) |
-| Reolink Altas 2K Camera Child | v14 | Atlas 2K battery camera: spotlight or status LED, PIR, battery | [raw](https://raw.githubusercontent.com/mrfy8/reolink/main/Reolink%20Altas%202K%20Camera%20-%20Child.groovy) |
+| Reolink Altas 2K Camera Child | v14 | Altas 2K battery camera: spotlight or status LED, PIR, battery | [raw](https://raw.githubusercontent.com/mrfy8/reolink/main/Reolink%20Altas%202K%20Camera%20-%20Child.groovy) |
 | Reolink Argus MagiCam Camera Child | v1 | Argus MagiCam (AA lithium battery): status LED, PIR, battery | [raw](https://raw.githubusercontent.com/mrfy8/reolink/main/Reolink%20Argus%20MagiCam%20Camera%20-%20Child.groovy) |
 | Reolink CX-820 Camera Child | v8 | CX-820 PoE camera: spotlight (no battery, no PIR) | [raw](https://raw.githubusercontent.com/mrfy8/reolink/main/Reolink%20CX-820%20Camera%20-%20Child.groovy) |
 | Reolink Video Doorbell Child | v3 | Battery video doorbell: press detection, light, auto reply, PIR | [raw](https://raw.githubusercontent.com/mrfy8/reolink/main/Reolink%20Video%20Doorbell%20-%20Child.groovy) |
@@ -48,7 +48,6 @@ Camera drivers require **Reolink Hub Parent v22 or later**.
 
 - Push notification changes made through the API apply globally but are **not shown in the Reolink app**.
 - PIR on/off applies to battery cameras only; PoE cameras have no PIR sensor.
-- The Atlas driver is named **"Altas"** in Hubitat. The spelling is kept deliberately, because renaming a driver breaks devices already using it.
 - Each driver can clear old states for troubleshooting: uncomment the three `Clear …` command lines in its metadata.
 - Debug logging turns itself off after 2 hours.
 
